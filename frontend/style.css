@@ -1,0 +1,97 @@
+body { 
+      background-color: rgb(32, 28, 28);
+      font-family: Arial, sans-serif;
+      text-align: center; 
+      color: white;
+    }
+
+    #login, #chat-container, #loading {
+      margin: 20px auto;
+      width: 600px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      display: none;
+      background: #222;
+    }
+
+    #loading {
+      background: none;
+      border: none;
+    }
+
+    #loading img {
+      width: 120px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    #chat { 
+      width: 90%; 
+      height: 400px;
+      border: 1px solid #555;
+      margin: 10px auto;
+      padding: 10px;
+      overflow-y: auto;
+      text-align: left; 
+      background: #111;
+      border-radius: 8px;
+    }
+
+    input { 
+      margin: 10px 0;
+      padding: 10px; 
+      width: 90%;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 8px 15px; 
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: #4CAF50;
+      color: white;
+    }
+
+    .error { 
+      color: red;
+      font-size: 14px;
+    }
+
+    #counter {
+      font-size: 13px;
+      margin-top: -5px; 
+      color: #bbb; 
+    }
+
+    #foto1 {
+      display: inline-block;
+      background-size: cover;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    #foto1:hover { opacity: 0.8; }
+    #fileName { margin-left: 10px; font-size: 14px; color: #ccc; }
+
+    .message { display: flex; align-items: center; margin: 5px 0; }
+    .message img { border-radius: 8px; margin-right: 8px; max-width: 200px; max-height: 100px; }
+
+    #users-list { text-align: left; background: #111; padding: 10px; border-radius: 8px; margin-top: 15px; }
+    #users-list h4 { margin: 0 0 5px 0; font-size: 16px; }
+    #users-list ul { list-style: none; padding: 0; margin: 0; }
+    #users-list li { margin: 4px 0; display: flex; align-items: center; }
+    #users-list li img { width: 20px; height: 20px; border-radius: 50%; margin-right: 6px; }
+
+    #logo1 { position: absolute; top: 28px; left: 695px; }
+    #redetekih2 { position: absolute; top: 20px; left: 50%; transform: translateX(-50%); }

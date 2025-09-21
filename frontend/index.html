@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Redeteki</title>
+  <link rel="description" content="Redeteki, um blog com chats em tempo real">
+  <link rel="icon" href="./img/redetekiIcon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <h2 id="redetekih2">Redeteki</h2>
+  <br><br><br><br>
+
+  <img src="./img/redetekiIcon.png" id="logo1" width="50px">
+
+ 
+  <div id="loading">
+    <img src="./img/megucarregando.png" alt="Carregando...">
+    <p>Conectando ao servidor...</p>
+  </div>
+
+  
+  <div id="login">
+    <h3>Entrar</h3>
+    <input type="text" id="username" placeholder="Usuário (máx 28 caracteres)">
+    <input type="password" id="password" placeholder="Senha">
+
+    <input type="file" id="avatarFile" accept="image/*" hidden>
+    <label for="avatarFile" id="foto1">Escolher arquivo</label>
+    <span id="fileName">Nenhum arquivo escolhido</span>
+
+    <br><br>
+    <button onclick="fazerLogin()">Login</button>
+    <p class="error" id="loginError"></p>
+  </div>
+
+  
+  <div id="chat-container">
+    <div id="chat"></div>
+    <input type="text" id="msg" placeholder="Digite uma mensagem... (máx 70)">
+    <div id="counter">0/70</div>
+    <button onclick="enviar()">Enviar</button>
+
+    <div id="users-list">
+      <h4>Usuários online (0)</h4>
+      <ul id="users"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
